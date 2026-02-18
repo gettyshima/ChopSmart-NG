@@ -30,15 +30,6 @@ Colors: A sophisticated palette of Charcoal, Burnt Orange, and Clean White.
 
 UX: Large touch targets for waiters/chefs and a "mobile-first" approach for customers.
 
-## Project Structure
-Plaintext
-Onu-Kitchen/
-├── images/             # Restaurant assets and icons
-├── css/                # Individual stylesheets for each user role
-├── admin/              # Admin dashboard pages
-├── waiter/             # Waiter login and dashboard
-├── kitchen/            # Chef's order management view
-└── index.html          # Main customer entry point
 
 # Author
 Gertrude Ahemba.
