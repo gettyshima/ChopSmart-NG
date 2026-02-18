@@ -7,45 +7,50 @@
     <title>Admin - Administrator</title>
 </head>
 <body>
-  <nav class="main-nav">
-  <div class="logo-text">Onu's Kitchen</div>
-  <strong>ONUS' KITCHEN</strong>
-  <a href="login.html" class="login-trigger">
-        <span class="icon">👤</span> <p>Login</p>
+  <nav class="top-nav">
+   <h1>ONUS' KITCHEN</h1>
+  <a href="Admin_Login.html">
+        <span>👤</span> <p>Login</p>
     </a>
 </nav>
-<hr>
-<section>
-  <h2>Restaurant Profile</h2>
+ 
+<section class="card-nav"> 
+<h2>Restaurant Profile</h2>
   <form>
-    <label>Restaurant Name:</label>
-    <input type="text" value="Mama Africa Kitchen">
-    
     <label>Opening Status:</label>
     <input type="radio" name="status" value="open" checked> Open
     <input type="radio" name="status" value="closed"> Closed
   </form>
 </section>
-<hr>
-<section>
-  <div class="stat-card">
-    <h3>Total Orders Today</h3>
-    <p>45</p>
+
+  
+
+<section class="card-nav">
+  <h2>Order Analytics</h2>
+  <div class="card-content">
+    <div class="card-nav">
+    <h3>Total Orders Today</h3><br>
+    <p> 45</p>
+    <a href="http://#">Click to see full analysis</a>
   </div>
-  <div class="stat-card">
+  <div class="card-nav">
     <h3>Pending Requests</h3>
-    <p>3 (Waiters needed at Table 5, 8, 12)</p>
+    <p>3</p>
+    <details>
+    <li>T5 needs plate</li>
+    <li>T7 needs spoon</li>
+    </details>
   </div>
+</div>
 </section>
  
-<hr>
-<section>
+<section class="card-nav">
 <h2>Bulk Menu Update</h2>
 <p>Enter multiple dishes below before saving all at once.
   <br><i style="color: red;">please note that prices entered should be crossed checked properly before saving.</i>
 </p>
-
-<table border="1">
+<div style="overflow-x: auto;">
+<table >
   <thead>
     <tr>
       <th>Food Name</th>
@@ -84,6 +89,7 @@
     </tr>
   </tbody>
 </table>
+</div>
 <br>
 <button type="button" id="add-row-btn">Add Another Row</button>
 <button type="submit" style="background-color: green; color: white;">Save All Changes</button>

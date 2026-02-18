@@ -1,0 +1,96 @@
+:root{
+    --primary-color: rgb(4, 42, 4);
+    --secondary-color: rgb(159, 164, 159);
+    --font-main: cursive;
+    --bg-main:  #f4f7f6;
+
+    /* radius */
+    --button-raduis: 12px;              /* How rounded the corners are */
+    --button-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    --section-background-color: #ffffff; /* White */
+    --section-border-radius: 8px;
+    --section-padding: 20px;
+    --section-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --section-margin: 20px;
+       
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+body{
+     background-color: var(--bg-main);
+    color: var(--secondary-color);
+    line-height: 1.6;
+    font-family: var(--font-main)
+}
+
+.top-nav {
+    background-color: var(--primary-color); /* Our Charcoal */
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between; /* Logo on left, Icon on right */
+    align-items: center;
+    position: sticky; /* Stays at the top when you scroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--section-box-shadow);
+}
+
+.card-nav {
+    display: flex;
+    flex-direction: column; /* This stacks them vertically */
+    align-items: center; /* Keeps text aligned to the left */
+    gap: 10px;               /* Adds a little space between the two lines */
+    
+    /* Keep your existing styles below */
+    background-color: var(--section-background-color);
+    padding: var(--section-padding);
+    border-radius: var(--section-border-radius);
+    box-shadow: var(--section-box-shadow);
+    margin: var(--section-margin);
+
+    
+}
+
+
+.card-content {
+    
+    background-color: var(--section-background-color);
+    padding: var(--section-padding);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--section-border-radius);
+    box-shadow: var(--section-box-shadow);
+    
+}
+
+
+table {
+  border-collapse: collapse; /* Merges adjacent borders */
+  width: 100%;               /* Makes table responsive to container */
+  margin: 5px 0;
+  font-family: var(--font-main);
+  min-width: 40px;
+}
+
+th, td {
+  padding: 12px 15px;      /* Standard spacing */
+  text-align: left;        /* Align text to start */
+  border-bottom: 1px solid #dddddd;
+}
+
+thead tr {
+  background-color: #009879; /* Modern green header */
+  color: #ffffff;
+  text-align: left;
+}
+
+
