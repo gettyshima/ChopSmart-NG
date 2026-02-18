@@ -1,0 +1,128 @@
+/* THE MAGIC BUCKETS (Variables) */
+@import url('https://fonts.googleapis.com');
+
+:root {
+  /* Colors */
+  --primary-color: #E65100;    /* Onu's Deep Orange */
+  --secondary-color: #010b06;  /* Charcoal Gray */
+  --bg-light: #f4f4f4;         /* Light Gray Background */
+  --white: #f3f6f5;
+  --success: #2e7d32;          /* Green for 'Served' or 'Ready' */
+  --danger: #d32f2f;           /* Red for 'Cancel' or 'Emergency' */
+
+  /* The Font Bucket */
+  --font-main: cursive;
+  --font-alt: 'Segoe UI', sans-serif; /* A backup font just in case */
+
+  /* Spacing & Shapes */
+  --radius: 12px;              /* How rounded the corners are */
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* BASIC RESET - This makes sure every browser behaves the same */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--secondary-color);
+  line-height: 1.6;
+  font-family: 'Lora', serif;
+
+}
+
+/* THE HEADER (Common for Admin, Waiter, and Customer) */
+.main-nav {
+    background-color: var(--secondary-color); /* Our Charcoal */
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between; /* Logo on left, Icon on right */
+    align-items: center;
+    position: sticky; /* Stays at the top when you scroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.logo-text {
+    font-family: var(--font-main); /* Lora! */
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* THE LOGIN ICON */
+.login-trigger {
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem; /* Small text under icon */
+    cursor: pointer;
+}
+
+.login-trigger i {
+    font-size: 1.5rem; /* The actual icon size */
+    margin-bottom: 4px;
+}
+
+/* Center everything on the screen */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Takes up the whole screen height */
+    padding: 20px;
+}
+
+.login-box {
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Keeps it from getting too wide on laptops */
+}
+
+.pin-input {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 15px; /* Spaces the numbers out like a PIN */
+    margin: 20px 0;
+    border: 2px solid var(--bg-light);
+    border-radius: var(--radius);
+    padding: 10px;
+}
+
+.pin-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.pin-btn {
+    background: var(--bg-light);
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%; /* Makes them perfectly round! */
+    aspect-ratio: 1 / 1; /* Keeps them a circle, not an oval */
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pin-btn:active {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(0.9); /* Shakes a little when pressed */
+}

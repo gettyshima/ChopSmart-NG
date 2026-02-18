@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waiter Dashboard - Onu's Kitchen</title>
+</head>
+<body>
+    <h1>WAITER COMMAND CENTER</h1>
+    <hr>
+        <i>No orders ready. Keep up the good work!</i>
+    <br><hr>
+
+    <div style="display: flex; height: 100vh;">
+
+    <div style="flex: 2; border-right: 2px solid black; padding: 10px;">
+        
+      
+    <section id="waiter-pickups">
+        <h2>🍳 READY FOR PICKUP</h2>
+        <div style="background-color: #e0c817; padding: 10px; border: 1px solid green;">
+            <strong>Table 7:</strong> 2x Jollof Rice, 1x Coke
+            <br>
+            <button style="height: 40px;">MARK AS SERVED</button>
+        </div><br>
+
+         <div style="background-color: #e0c817; padding: 10px; border: 1px solid green;">
+            <strong>Table 11:</strong> 2x Jollof Rice, 1x Coke
+            <br>
+            <button style="height: 40px;">MARK AS SERVED</button>
+        </div>
+    </section>
+
+        <hr>
+
+        <section>
+            <h2>📍 Table Status</h2>
+            <div>
+                <span style="color: rgb(247, 179, 179);"><details><summary>Empty(3)</summary>Table 1; Table 18; Table 24</details></span>
+                <span style="color: rgb(148, 249, 215);"><details><summary>Occupied(1)</summary>Table 4; Table 12; Table 14</details></span>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap;">
+            
+            <article style="border: 2px solid black; width: 150px; margin: 5px; padding: 10px; background-color: rgb(247, 179, 179);">
+                <h3>Table 1</h3>
+                <p>Status: <i>Empty</i></p>
+                <button>Generate Code</button>
+            </article>
+
+            <article style="border: 2px solid black; width: 150px; margin: 5px; padding: 10px; background-color: rgb(148, 249, 215);">
+                <h3>Table 5</h3>
+                <p>Status: <strong>Eating</strong></p>
+                <p>Total: ₦8,500</p>
+                <details>
+                    <summary>View Order</summary>
+                    <ul>
+                        <li style="color: green;">Rice </li>
+                        <li> Rice <button style="color:red;">x</button> <button style="color:red;">edit</button> </li>
+                        <li style="color: yellow;">Semo </li>
+                        <li style="color: black;">spaghetti</li>
+                    </ul>
+                </details>
+                <button>+ Add Pack</button>
+                <button>Close Table</button>
+            </article>
+
+             <article style="border: 2px solid black; width: 150px; margin: 5px; padding: 10px; background-color: rgb(247, 179, 179);">
+                <h3>Table 6</h3>
+                <p>Status: <i>Empty</i></p>
+                <button>Generate Code</button>
+            </article>
+
+             <article style="border: 2px solid black; width: 150px; margin: 5px; padding: 10px; background-color: rgb(148, 249, 215);">
+                <h3>Table 3</h3>
+                <p>Status: <strong>Eating</strong></p>
+                <p>Total: ₦8,500</p>
+                <details>
+                    <summary>View Order</summary>
+                    <ul>
+                        <li style="color: green;">Rice </li>
+                        <li style="color: yellow;">Semo </li>
+                        <li style="color: black;">spaghetti</li>
+                    </ul>
+                </details>
+                <button>+ Add Pack</button>
+                <button>Close Table</button>
+            </article>
+
+             <article style="border: 2px solid black; width: 150px; margin: 5px; padding: 10px; background-color: rgb(148, 249, 215);">
+                <h3>Table 2</h3>
+                <p>Status: <strong>Eating</strong></p>
+                <p>Total: ₦8,500</p>
+                <details>
+                    <summary>View Order</summary>
+                    <ul>
+                        <li style="color: green;">Rice </li>
+                        <li style="color: yellow;">Semo </li>
+                        <li style="color: black;">spaghetti</li>
+                    </ul>
+                </details>
+                <button>+ Add Pack</button>
+                <button>Close Table</button>
+            </article>
+
+             <article style="border: 2px solid black; width: 150px; margin: 5px; padding: 10px; background-color: rgb(247, 179, 179);">
+                <h3>Table 10</h3>
+                <p>Status: <i>Empty</i></p>
+                <button>Generate Code</button>
+            </article>
+
+             <article style="border: 2px solid black; width: 150px; margin: 5px; padding: 10px; background-color: rgb(247, 179, 179);">
+                <h3>Table 11</h3>
+                <p>Status: <i>Empty</i></p>
+                <button>Generate Code</button>
+            </article>
+        </div>
+            </section>
+    </div>
+
+    <div style="flex: 1; padding: 10px;">
+         <section id="alerts">
+        <h2>🔔 SERVICE REQUESTS</h2><hr>
+
+        <h3>  CALLING   </h3>
+        <strong>Table 1:🔔</strong> <button>Attending</button> <button>Resolved</button><br>
+        <strong>Table 7:🔔</strong> <button>Attending</button> <button>Resolved</button><hr><br>
+
+        <h3>MESSAGES</h3>
+        <table border="1" width="100%">
+            <tr>
+                <td><strong>Table 4:</strong> Water, Napkin</td>
+                <td><button>I'm on it!</button></td>
+                <td><button>Resolved</button></td>
+            </tr>
+            <tr>
+                <td><strong>Table 12:</strong> Extra spoon</td>
+                <td><button>Attending</button></td>
+                <td><button>Resolved</button></td>
+            </tr>
+        </table>
+    </section>
+        </div>
+
+</div>
+
+</body>
+</html>

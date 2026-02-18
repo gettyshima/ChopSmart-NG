@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <h1 style="text-align: center;">My Food</h1><hr>
+    <section>
+        <div>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Food item</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2 pks</td>
+                        <td><img src="rice.png" alt="rice" width="50"> <br>Jollof rice <br>
+                            <label for="Add-Info">additional info</label><br><textarea name="Additional information" id="Add-Info" placeholder="No onions, no pepper"></textarea><br> <button>-</button> <button>+</button></td>
+                        <td>₦3,000</td>
+                    </tr>
+                    <tr>
+                        <td>1 piece</td>
+                        <td>Bottle Water <br>
+                            <label for="i2-Add-Info">additional info</label><br><textarea name="i2-Additional information" id="i2=Add-Info" placeholder="No onions, no pepper"></textarea><br> <button>-</button> <button>+</button></td>
+                        <td>₦1,000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>₦4,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section><hr>
+    <strong>Done Picking? </strong>
+    <form>
+        <label for="Act-Code">Insert your activation Code to proceed to Checkout</label><br>
+        <input type="text" id="Act-Code" required maxlength="4">
+        <button type="submit"> Submit</button>
+    </form>
+    <div>
+        <hr>
+        <strong><a href="Checkout.html">Pay Now?</a></strong> |
+        <strong><a href="Kitchen.html">Keep Tab Open to Pay Later</a></strong>
+
+    </div>
+</body>
+
+</html>

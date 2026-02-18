@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin - Administrator</title>
+</head>
+<body>
+  <nav class="main-nav">
+  <div class="logo-text">Onu's Kitchen</div>
+  <strong>ONUS' KITCHEN</strong>
+  <a href="login.html" class="login-trigger">
+        <span class="icon">👤</span> <p>Login</p>
+    </a>
+</nav>
+<hr>
+<section>
+  <h2>Restaurant Profile</h2>
+  <form>
+    <label>Restaurant Name:</label>
+    <input type="text" value="Mama Africa Kitchen">
+    
+    <label>Opening Status:</label>
+    <input type="radio" name="status" value="open" checked> Open
+    <input type="radio" name="status" value="closed"> Closed
+  </form>
+</section>
+<hr>
+<section>
+  <div class="stat-card">
+    <h3>Total Orders Today</h3>
+    <p>45</p>
+  </div>
+  <div class="stat-card">
+    <h3>Pending Requests</h3>
+    <p>3 (Waiters needed at Table 5, 8, 12)</p>
+  </div>
+</section>
+ 
+<hr>
+<section>
+<h2>Bulk Menu Update</h2>
+<p>Enter multiple dishes below before saving all at once.
+  <br><i style="color: red;">please note that prices entered should be crossed checked properly before saving.</i>
+</p>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Food Name</th>
+      <th>Price</th>
+      <th>Image</th> <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" placeholder="Item name"></td>
+      <td><input type="number" placeholder="₦0.00"></td>
+      
+      <td>
+        <input type="file" accept="image/*">
+      </td>
+
+      <td>
+        <select>
+          <option>Main</option>
+          <option>Dessert</option>
+          <option>Drink</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="text" placeholder="Item name"></td>
+      <td><input type="number" placeholder="₦0.00"></td>
+      <td><input type="file" accept="image/*"></td>
+      <td>
+        <select>
+          <option>Main</option>
+          <option>Dessert</option>
+          <option>Drinks</option>
+      </select>
+    </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<button type="button" id="add-row-btn">Add Another Row</button>
+<button type="submit" style="background-color: green; color: white;">Save All Changes</button>
+ </section>
+
+  </body>
+  </html>
