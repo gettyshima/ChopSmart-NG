@@ -7,14 +7,31 @@
     <title>Admin - Administrator</title>
 </head>
 <body>
+
+
   <nav class="top-nav">
-   <h1>ONUS' KITCHEN</h1>
-  <a href="Admin_Login.html">
-        <span>👤</span> <p>Login</p>
+    <h1>ONUS' KITCHEN</h1>
+  <div style="display: flex;">
+  <p>☀️</p>
+   <p>🔔</p>
+      <a href="Admin_Login.html">
+        <span>👤</span> <p>Admin </p> 
     </a>
-</nav>
+   </div>
  
-<section class="card-nav"> 
+</nav>
+
+<section>
+  <ul class="side-nav-bar"> 
+    <li> <a href="#">Search</a> </li>
+  <li><a href="Administrator.html">Dashboard</a> </li>
+  <li> <a href="#">Menu Editor</a> </li>
+  <li> <a href="#">Staff Manager</a> </li>
+  <li> <a href="#">Settings</a> </li>
+  </ul>
+</section>
+ 
+<section class="card-nav"  
 <h2>Restaurant Profile</h2>
   <form>
     <label>Opening Status:</label>
@@ -27,7 +44,8 @@
 
 <section class="card-nav">
   <h2>Order Analytics</h2>
-  <div class="card-content">
+  
+   <div class="card-content">
     <div class="card-nav">
     <h3>Total Orders Today</h3><br>
     <p> 45</p>
@@ -91,9 +109,11 @@
 </table>
 </div>
 <br>
+<div class="pin-btn"> </div>
+
 <button type="button" id="add-row-btn">Add Another Row</button>
 <button type="submit" style="background-color: green; color: white;">Save All Changes</button>
  </section>
 
-  </body>
-  </html>
+</body>
+</html>
