@@ -35,19 +35,21 @@ body{
     line-height: 1.6;
     font-family: var(--font-main)
 }
+
+/*
 .main-wrapper{
-  margin-left: 200px; /* This creates the 'lane' for your sidebar */
+  margin-left: 200px; /* This creates the 'lane' for your sidebar 
   padding: 20px;
   width: calc(100% - 200px);
 }
 
 .top-nav {
-    background-color: var(--primary-color); /* Our Charcoal */
+    background-color: var(--primary-color); /* Our Charcoal 
     padding: 1rem 5%;
     display: flex;
-    justify-content: space-between; /* Logo on left, Icon on right */
+    justify-content: space-between; /* Logo on left, Icon on right 
     align-items: center;
-    position: sticky; /* Stays at the top when you scroll */
+    position: sticky; /* Stays at the top when you scroll 
     top: 0;
     z-index: 1000;
     box-shadow: var(--section-box-shadow);
@@ -73,7 +75,7 @@ body{
 
 }
 
-/* Change the link and background color on hover */
+/* Change the link and background color on hover 
 .side-nav-bar a:hover {
   background-color: var(--primary-color);
   color: white;
@@ -87,22 +89,27 @@ body{
 
 .card-nav {
     display: flex;
-    flex-direction: column; /* This stacks them vertically */
-    align-items: center; /* Keeps text aligned to the left */
-    gap: 10px;               /* Adds a little space between the two lines */
+    flex-direction: column; /* This stacks them vertically 
+    align-items: center; /* Keeps text aligned to the left 
+    gap: 10px;               /* Adds a little space between the two lines 
     
-    /* Keep your existing styles below */
+    /* Keep your existing styles below 
     background-color: var(--section-background-color);
     padding: var(--section-padding);
     border-radius: var(--section-border-radius);
     box-shadow: var(--section-box-shadow);
     margin: var(--section-margin);
-    overflow: hidden;
-
-    
+       
 }
 
+.card-better{
 
+  flex-wrap: wrap;
+  align-items: space-between;
+  flex-direction: row;
+  gap: 200px;
+  
+}
 .card-content {
     
     background-color: var(--section-background-color);
@@ -117,21 +124,28 @@ body{
 
 
 table {
-  border-collapse: collapse; /* Merges adjacent borders */
-  width: 100%;               /* Makes table responsive to container */
+  border-collapse: collapse; /* Merges adjacent borders 
+  width: 100%;               /* Makes table responsive to container 
   margin: 5px 0;
   font-family: var(--font-main);
   min-width: 40px;
+  overflow-x: auto;
+  min-width: 600px;
 }
 
 th, td {
-  padding: 12px 15px;      /* Standard spacing */
-  text-align: left;        /* Align text to start */
+  padding: 12px 15px;      /* Standard spacing 
+  text-align: left;        /* Align text to start 
   border-bottom: 1px solid #dddddd;
 }
 
 thead tr {
-  background-color: var(--primary-color); /* Modern green header */
+  background-color: var(--primary-color); /* Modern green header 
   color: #ffffff;
   text-align: left;
+}
+  */
+.top-nav{
+  display: flex;
+  justify-content: space-between;
 }
