@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com');
 
 :root{
-    --primary-color: rgb(48, 207, 246);
+    --primary-color: rgb(252, 176, 0);
     --secondary-color: rgb(4, 17, 4);
     --font-main:"Poppins", sans-serif;
     --bg-main:  #f4f7f6;
@@ -30,7 +30,7 @@
 }
 
 body{
-     background-color: var(--bg-main);
+    background-color: var(--bg-main);
     color: var(--secondary-color);
     line-height: 1.6;
     font-family: var(--font-main)
@@ -148,4 +148,33 @@ thead tr {
 .top-nav{
   display: flex;
   justify-content: space-between;
+  padding: 1rem 5%;
+  box-shadow: var(--section-box-shadow); 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  width: 100%;
+}
+.logo-img {
+  width: 70px;       
+  height: 70px;      
+  border-radius: 50%;
+  border: 3px solid var(--secondary-color);
+  object-fit: cover;    
+  object-position: center; 
+}
+
+.side-nav-bar{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  border-right: 1px solid var(--secondary-color);
+  width: 150px;
+  height: 100vh;
+  
+}
+
+.admin-content{
+  flex-direction: column;
 }

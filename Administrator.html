@@ -8,30 +8,38 @@
 </head>
 <body>
 
-
   <nav class="top-nav">
-    <h1><img ONUS' KITCHEN</h1>
-  <div style="display: flex;">
-  <p>☀️</p>
-   <p>🔔</p>
-      <a href="Admin_Login.html">
-        <span>👤</span> <p>Admin </p> 
-    </a>
-   </div>
- 
-</nav>
+      <div style="display: flex;">
+        <img src="onus' kitchen.jpg" alt="onus' kitche logo" class="logo-img" >
+        <h1 style="margin: 5px;"> ONUS' KITCHEN</h1>
+      </div>
+      
+      <div style="display: flex;">
+          <p style="margin: 5px;">☀️</p>
+          <p style="margin: 5px;">🔔</p>
+          <a href="Admin_Login.html">
+           <span class="logo-img">👤</span> 
+           <p>Admin </p> 
+         </a>
+      </div>
+  </nav>
 
-<section>
-  <ul class="side-nav-bar"> 
-    <li> <a href="#">Search</a> </li>
-  <li><a href="Administrator.html">Dashboard</a> </li>
-  <li> <a href="#">Menu Editor</a> </li>
-  <li> <a href="#">Staff Manager</a> </li>
-  <li> <a href="#">Settings</a> </li>
-  </ul>
-</section>
- 
-<section class="card-nav">
+<section style="display: flex;">
+
+ <section>
+    <div>
+      <ul class="side-nav-bar">
+        <li><a href="Administrator.html">Dashboard</a></li> 
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Menu Editor</a></li>
+        <li><a href="#">Staff Manager</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <section class="card-nav">
   <h2>Restaurant Profile</h2>
   <form>
     <label>Opening Status:</label>
@@ -39,8 +47,6 @@
     <input type="radio" name="status" value="closed"> Closed
   </form>
 </section>
-
-  
 
 <section class="card-nav">
   <h2>Order Analytics</h2>
@@ -65,10 +71,10 @@
 </section>
  
 <section class="card-nav">
-<h2>Bulk Menu Update</h2>
-<p>Enter multiple dishes below before saving all at once.
-  <br><i style="color: red;">please note that prices entered should be crossed checked properly before saving.</i>
-</p>
+    <h2>Bulk Menu Update</h2>
+    <p>Enter multiple dishes below before saving all at once.
+      <br><i style="color: red;">please note that prices entered should be crossed checked properly before saving.</i>
+    </p>
 <div style="overflow-x: auto;">
 <table >
   <thead>
@@ -116,6 +122,11 @@
 <button type="button" id="add-row-btn">Add Another Row</button>
 <button type="submit" style="background-color: green; color: white;">Save All Changes</button>
  </section>
+  
+
+</section>
+ 
+</section>
 
 </body>
 </html>
