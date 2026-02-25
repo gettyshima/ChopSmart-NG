@@ -43,29 +43,6 @@ body{
   width: calc(100% - 200px);
 }
 
-.top-nav {
-    background-color: var(--primary-color); /* Our Charcoal 
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between; /* Logo on left, Icon on right 
-    align-items: center;
-    position: sticky; /* Stays at the top when you scroll 
-    top: 0;
-    z-index: 1000;
-    box-shadow: var(--section-box-shadow);
-}
-
-.side-nav-bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width:var(--side-bar-width);
-  background-color: var(--section-background-color);
-  height: 100vh;
-  position: fixed;
-  border-right: 1px solid #ddd;
-  
-}
 
 .side-nav-bar a {
   display: block;
@@ -154,8 +131,19 @@ thead tr {
   top: 0;
   z-index: 1000;
   background-color: var(--primary-color);
-  
 }
+
+.top-nav a{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.top-nav a:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
 
 .logo-img {
   width: 70px;       
@@ -165,13 +153,7 @@ thead tr {
   object-fit: cover;    
   object-position: center; 
 }
-.top-nav a{
-  display: block;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  
-}
+
 
 .side-nav-bar{
   display: flex;
@@ -191,15 +173,12 @@ thead tr {
   
 }
 
-a:hover{
+.side-nav-bar a:hover{
+  background-color: var((--secondary-color));
   color: var(--primary-color);
-  
-}
-.admin-content{
-  
 }
 
-.card-nav{
- 
-  
+.active{
+  background-color: #ddd;
+  color: #ddd;
 }
