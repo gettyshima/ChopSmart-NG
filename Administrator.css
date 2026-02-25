@@ -33,7 +33,7 @@ body{
     background-color: var(--bg-main);
     color: var(--secondary-color);
     line-height: 1.6;
-    font-family: var(--font-main)
+    font-family: var(--font-main);
 }
 
 /*
@@ -154,8 +154,9 @@ thead tr {
   top: 0;
   z-index: 1000;
   background-color: var(--primary-color);
-  width: 100%;
+  
 }
+
 .logo-img {
   width: 70px;       
   height: 70px;      
@@ -164,17 +165,41 @@ thead tr {
   object-fit: cover;    
   object-position: center; 
 }
+.top-nav a{
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  
+}
 
 .side-nav-bar{
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  border-right: 1px solid var(--secondary-color);
+  border-right: 1px solid #ddd;
   width: 150px;
   height: 100vh;
+  box-shadow: var(--section-box-shadow);  
+}
+
+.side-nav-bar a{
+  display: block;
+  color: var(--secondary-color);
+  padding: 8px 16px;
+  text-decoration: none;
   
 }
 
+a:hover{
+  color: var(--primary-color);
+  
+}
 .admin-content{
-  flex-direction: column;
+  
+}
+
+.card-nav{
+ 
+  
 }
