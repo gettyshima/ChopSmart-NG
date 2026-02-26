@@ -43,27 +43,6 @@ body{
   width: calc(100% - 200px);
 }
 
-
-.side-nav-bar a {
-  display: block;
-  color: var(--secondary-color);
-  padding: 8px 16px;
-  text-decoration: none;
-
-}
-
-/* Change the link and background color on hover 
-.side-nav-bar a:hover {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-
 .card-nav {
     display: flex;
     flex-direction: column; /* This stacks them vertically 
@@ -131,6 +110,7 @@ thead tr {
   top: 0;
   z-index: 1000;
   background-color: var(--primary-color);
+  width: 100%;
 }
 
 .top-nav a{
@@ -174,11 +154,78 @@ thead tr {
 }
 
 .side-nav-bar a:hover{
-  background-color: var((--secondary-color));
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
 .active{
   background-color: #ddd;
   color: #ddd;
+}
+
+.card-block{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  background-color: var(--section-background-color);
+  padding: 1rem 5%;
+  border-radius: var(--section-border-radius);
+  box-shadow: var(--section-box-shadow);
+  margin: var(--section-margin);
+  width: 95%;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  left: 45%;
+ 
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+
+}
+input:focus + .slider {
+  box-shadow: 0 0 8px #2196F3; /* A blue glow when you Tab onto it */
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ddd;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+
+input:checked + .slider {
+  background-color: var(--primary-color)
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
 }

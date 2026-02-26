@@ -40,95 +40,86 @@
       </ul>
     </div>
   </section>
-  <section class="admin-content">
-    <section class="card-nav">
-      <h2>Restaurant Profile</h2>
-      <form>
-        <label>Opening Status:</label>
-        <input type="radio" name="status" value="open" checked> Open
-        <input type="radio" name="status" value="closed"> Closed
-      </form>
+  <section style="flex: 1;">
+      <section class="card-block">
+          <h2>Restaurant Profile</h2>
+         <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+<span class="status-text">Closed / Open</span>
+
+      </section>
+
+      <section style="display: block;">
+          <h2>Order Analytics</h2>
+          <div>
+              <div>
+                <h3>Total Orders Today</h3><br>
+                <p> 45</p>
+                <a href="http://#">Click to see full analysis</a>
+              </div>
+              <div>
+                <h3>Pending Requests</h3>
+                <p>3</p>
+                <details>
+                  <li>T5 needs plate</li>
+                  <li>T7 needs spoon</li>
+                </details>
+              </div>
+            </div>
+      </section>
+ 
+      <section >
+         <h2>Bulk Menu Update</h2>
+         <p>Enter multiple dishes below before saving all at once.
+            <br><i style="color: red;">please note that prices entered should be crossed checked properly before saving.</i>
+        </p>
+        <div>
+            <table >
+              <thead>
+                <tr>
+                  <th>Food Name</th>
+                  <th>Price</th>
+                  <th>Image</th> 
+                  <th>Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" placeholder="Item name"></td>
+                  <td><input type="number" placeholder="₦0.00"></td>
+                  <td><input type="file" accept="image/*"></td>
+                  <td>
+                    <select>
+                      <option>Main</option>
+                      <option>Dessert</option>
+                      <option>Drink</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="text" placeholder="Item name"></td>
+                  <td><input type="number" placeholder="₦0.00"></td>
+                  <td><input type="file" accept="image/*"></td>
+                  <td>
+                    <select>
+                      <option>Main</option>
+                      <option>Dessert</option>
+                      <option>Drinks</option>
+                    </select>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+
+      <div > </div>
+
+        <button type="button" id="add-row-btn">Add Another Row</button>
+        <button type="submit" style="background-color: green; color: white;">Save All Changes</button>
+      </section>
     </section>
-
-<section class="card-nav">
-  <h2>Order Analytics</h2>
-  
-   <div class="card-nav card-better">
-
-    <div>
-    <h3>Total Orders Today</h3><br>
-    <p> 45</p>
-    <a href="http://#">Click to see full analysis</a>
-  </div>
-
-  <div>
-    <h3>Pending Requests</h3>
-    <p>3</p>
-    <details>
-    <li>T5 needs plate</li>
-    <li>T7 needs spoon</li>
-    </details>
-  </div>
-</div>
 </section>
- 
-<section class="card-nav">
-    <h2>Bulk Menu Update</h2>
-    <p>Enter multiple dishes below before saving all at once.
-      <br><i style="color: red;">please note that prices entered should be crossed checked properly before saving.</i>
-    </p>
-<div style="overflow-x: auto;">
-<table >
-  <thead>
-    <tr>
-      <th>Food Name</th>
-      <th>Price</th>
-      <th>Image</th> <th>Category</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><input type="text" placeholder="Item name"></td>
-      <td><input type="number" placeholder="₦0.00"></td>
-      
-      <td>
-        <input type="file" accept="image/*">
-      </td>
-
-      <td>
-        <select>
-          <option>Main</option>
-          <option>Dessert</option>
-          <option>Drink</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td><input type="text" placeholder="Item name"></td>
-      <td><input type="number" placeholder="₦0.00"></td>
-      <td><input type="file" accept="image/*"></td>
-      <td>
-        <select>
-          <option>Main</option>
-          <option>Dessert</option>
-          <option>Drinks</option>
-      </select>
-    </td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<br>
-<div class="pin-btn"> </div>
-
-<button type="button" id="add-row-btn">Add Another Row</button>
-<button type="submit" style="background-color: green; color: white;">Save All Changes</button>
- </section>
-  
-
-  </section>
- 
-</section>
-
 </body>
 </html>
