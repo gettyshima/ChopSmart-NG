@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section >
+         <h2> Menu Editor</h2>
+         <p>Enter multiple dishes below before saving all at once.
+            <br><i style="color: red;">please note that prices entered should be crossed checked properly before saving.</i>
+        </p>
+        <div>
+            <table >
+              <thead>
+                <tr>
+                  <th>Food Name</th>
+                  <th>Price</th>
+                  <th>Image</th> 
+                  <th>Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" placeholder="Item name"></td>
+                  <td><input type="number" placeholder="₦0.00"></td>
+                  <td><input type="file" accept="image/*"></td>
+                  <td>
+                    <select>
+                      <option>Main</option>
+                      <option>Dessert</option>
+                      <option>Drink</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="text" placeholder="Item name"></td>
+                  <td><input type="number" placeholder="₦0.00"></td>
+                  <td><input type="file" accept="image/*"></td>
+                  <td>
+                    <select>
+                      <option>Main</option>
+                      <option>Dessert</option>
+                      <option>Drinks</option>
+                    </select>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+
+      <div > </div>
+
+        <button type="button" id="add-row-btn">Add Another Row</button>
+        <button type="submit" style="background-color: green; color: white;">Save All Changes</button>
+      </section>
+    </section>
+</body>
+</html>
