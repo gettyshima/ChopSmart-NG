@@ -10,21 +10,24 @@
     --section-padding: 20px;
     --section-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+*{
+  padding: 0;
+  margin: 0;
+}
 
 body{
     line-height: 1.6;
     font-family: var(--font-main);
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
     min-height: 100vh;
 }
 .header{
   background:var(--primary-color);
   display: flex;
   justify-content: space-between;
-  padding: 8px;
+  align-items: center;
+  padding: 0 80px;
   box-shadow: var(--section-box-shadow);
 }
 .logo,
@@ -33,6 +36,7 @@ body{
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding: 0;
   color: var(--secondary-color);
 }
 button{
@@ -49,29 +53,35 @@ a{
   text-decoration: none;
   color: var(--secondary-color);
 }
-.body{
+
+.left-header{
   display: flex;
-  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
 }
-.side-bar{
-    background-color: var(--primary-color);
-    padding: 0;
-    width: 200px;
-}
-ul{
+.header ul{
   list-style-type: none;
   display: flex;
-  flex-direction: column;
   gap: 16px;
   padding: var(--section-padding);
 }
 li{
-  padding: 0;
-  font-size: 24px;
+  font-size: 18px;
+  border: 1px solid var(--secondary-color);
+  padding: 8px 16px;
+  border-radius: 16px;
+
 }
-.main-content{
+.body{
+  display: flex;
   flex: 1;
+  padding: 8px 100px;
+  gap: 16px;
+  justify-content: center;
+  align-items: stretch;
 }
+
 .footer{
   display: flex;
   align-items: center;
