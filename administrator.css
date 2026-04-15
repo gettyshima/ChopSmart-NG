@@ -18,12 +18,14 @@ body{
     flex-direction: column;
     padding: 0;
     margin: 0;
+    min-height: 100vh;
 }
 .header{
   background:var(--primary-color);
   display: flex;
   justify-content: space-between;
   padding: 8px;
+  box-shadow: var(--section-box-shadow);
 }
 .logo,
 .info{
@@ -45,4 +47,35 @@ button{
 }
 a{
   text-decoration: none;
+  color: var(--secondary-color);
+}
+.body{
+  display: flex;
+  flex: 1;
+}
+.side-bar{
+    background-color: var(--primary-color);
+    padding: 0;
+    width: 200px;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: var(--section-padding);
+}
+li{
+  padding: 0;
+  font-size: 24px;
+}
+.main-content{
+  flex: 1;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
